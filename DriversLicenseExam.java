@@ -4,7 +4,6 @@ public class DriversLicenseExam {
         Scanner input = new Scanner(System.in);
         String[] exam = {"A", "D", "B", "B", "C", "B", "A", "B", "C", "D", "A", "C", "D", "B", "D", "C", "C", "A", "D", "B"};
         String[] answer = new String[20];
-        //int i;
         int correct = 0;
         int incorrect = 0;
         String question = "";

@@ -8,18 +8,17 @@ public class Lottery {
         int[] user = new int[5];
         int win = 0;
         int lose = 0;
-        int i;
 
-        for(i=0; i<lottery.length; i++){
+        for(int i=0; i<lottery.length; i++){
             lottery[i] = generator.nextInt(10);
         }
         
-        for(i=0; i<user.length; i++){
-            System.out.print("Enter Integer No. "+(i+1)+": ");
+        for(int i=0; i<user.length; i++){
+            System.out.print("Enter Lottery No. "+(i+1)+": ");
             user[i] = input.nextInt();
         }
 
-        for(i=0; i<lottery.length; i++){
+        for(int i=0; i<lottery.length; i++){
             if(user[i] == lottery[i]){
                 win++;
             }
@@ -32,12 +31,12 @@ public class Lottery {
         System.out.print("\n");
 
         System.out.println("Lottery Numbers: ");
-        for(i=0; i<lottery.length; i++){
+        for(int i=0; i<lottery.length; i++){
             System.out.print(lottery[i]+"\t");
         }
         
-        System.out.println("\nUser Numbers: ");
-        for(i=0; i<user.length; i++){
+        System.out.println("\nYour Numbers: ");
+        for(int i=0; i<user.length; i++){
             System.out.print(user[i]+"\t");
         }
         
